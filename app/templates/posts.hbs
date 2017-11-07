@@ -1,0 +1,14 @@
+{{outlet}}
+
+<h2><b>Posts</b></h2>
+
+31:00
+
+<hr>
+
+{{#each model as |post|}}
+  <br><br>
+  {{post.title}} <br>
+  {{post.body}} <br>
+  By: {{post.userId.name}} <br>
+{{/each}}
