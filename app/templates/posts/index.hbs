@@ -1,0 +1,8 @@
+{{outlet}}
+
+{{#each posts as |post|}}
+  <br><br>
+  {{post.title}} <br>
+  {{post.body}} <br>
+  By: {{post.user.name}} <br>
+{{/each}}
