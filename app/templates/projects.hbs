@@ -1,0 +1,13 @@
+<h3>Projects route</h3>
+
+<hr>
+
+{{#each projects as |project|}}
+  Name: {{project.name}} <br>
+  ID:  {{project.id}} &nbsp;
+  <button {{action 'deleteProject' project}}>Delete</button>
+  <br>
+  <br>
+{{/each}}
+
+{{outlet}}
