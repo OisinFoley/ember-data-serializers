@@ -3,8 +3,14 @@
 <hr>
 
 {{#each projects as |project|}}
-  Name: {{project.name}} <br>
+  {{!--Name: {{project.name}} <br> --}}
+  {{!--   WORKING HARDCODED EXAMPLE
+    <a href="http://localhost:5000/#/project/{{project.id}}"> Open Project</a>
+  --}}
+
   ID:  {{project.id}} &nbsp;
+
+  {{log project.id}}
   <button {{action 'deleteProject' project}}>Delete</button>
   <br>
   <br>
